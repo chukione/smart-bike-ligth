@@ -1,0 +1,40 @@
+{
+  "build": {
+    "arduino": {
+      "ldscript": "esp32s3_out.ld",
+      "memory_type": "qio_qspi",
+      "partitions": "default_4MB.csv"
+    },
+    "core": "esp32",
+    "f_cpu": "240000000L",
+    "f_flash": "80000000L",
+    "flash_mode": "qio",
+    "mcu": "esp32s3",
+    "variant": "lolin_s3_mini"
+  },
+  "connectivity": [
+    "wifi"
+  ],
+  "debug": {
+    "openocd_target": "esp32s3.cfg"
+  },
+  "frameworks": [
+    "arduino",
+    "espidf"
+  ],
+  "name": "Waveshare ESP32-S3 Matrix",
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 460800,
+    "protocols": [
+      "esptool",
+      "esp-ota"
+    ],
+    "protocol": "esptool"
+  },
+  "url": "https://www.waveshare.com/wiki/ESP32-S3-Matrix",
+  "vendor": "Waveshare"
+}
